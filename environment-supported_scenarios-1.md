@@ -17,13 +17,13 @@ Noted. Custom Rule means custom design allocation rule & payment rule (See **Cus
 
 ##### Agent/bidder number:
 
-- [x] Fixed agent number during simulation (2 | 3 | 4 | ..| 10 | .. | 100 | ..) 
+- [x] Fixed agent number during simulation [ 2 | 3 | 4 | .. | 10 | .. | 100 | .. ]
 - [ ] Dynamic agent number during simulation 
 
 ##### Other auction settings:
 
 - [x] Reserve price
-- [x] entrance fee
+- [x] Entrance fee
 - [ ] <br />
 
 ---
