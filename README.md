@@ -28,13 +28,13 @@
 
 ## 5. Environment
 
-### 5.1 [Environment: Supported Scenarios-1 Sealed Value-Based Single-Item (Repeated) Auction](./Environment/Environment%20_%20Supported%20Scenarios-1%20Sealed%20Value-Based%20Single-Item%20(Repeated)%20Auction.md)
+### 5.1 [Environment: Supported Scenarios-1 Sealed Value-Based Single-Item (Repeated) Auction](./Environment/Environment_Supported-Scenarios_1_Sealed-Value-Based-Single-Item-Repeated-Auction.md)
 
-### 5.2 [Environment: Supported Scenarios-2 Sealed Signal-Based Single-Item (Repeated) Auction](./Environment/Environment%20_%20Supported%20Scenarios-2%20Sealed%20Signal-Based%20Single-Item%20(Repeated)%20Auction.md)
+### 5.2 [Environment: Supported Scenarios-2 Sealed Signal-Based Single-Item (Repeated) Auction](./Environment/Environment_Supported-Scenarios_2_Sealed-Signal-Based-Single-Item-Repeated-Auction.md)
 
-### 5.3 [Environment: Supported Scenarios-3 Open Auction](./Environment/Environment%20_%20Supported%20Scenarios-3%20Open%20Auction.md)
+### 5.3 [Environment: Supported Scenarios-3 Open Auction](./Environment/Environment_Supported-Scenarios_3_Open-Auction.md)
 
-### 5.4 [Environment: Supported Scenarios-4 Stackelberg Game](./Environment/Environment%20_%20Supported%20Scenarios-4%20Stackelberg%20Game.md)
+### 5.4 [Environment: Supported Scenarios-4 Stackelberg Game](./Environment/Environment_Supported-Scenarios_4_Stackelberg-Game.md)
 
 ## 6. Platform (Social Planner)
 
