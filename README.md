@@ -38,11 +38,11 @@
 
 ## 6. Platform (Social Planner)
 
-### 6.1 [Bayesian Persuasion](./Platform_Social-Planner/Bayesian%20Persuasion.md)
+### 6.1 [Bayesian Persuasion](./Platform_Social-Planner/Bayesian_Persuasion.md)
 
-### 6.2 [Mechanism Design](./Platform_Social-Planner/Mechanism%20Design.md)
+### 6.2 [Mechanism Design](./Platform_Social-Planner/Mechanism_Design.md)
 
-### 6.3 [Signal Generator](./Platform_Social-Planner/Signal%20Generator.md)
+### 6.3 [Signal Generator](./Platform_Social-Planner/Signal_Generator.md)
 
 
 ### 7. Quick Start
