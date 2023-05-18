@@ -9,8 +9,7 @@ pip install requirements.txt
 
 
 ```
-
-We also provide a detailed version of dependency from pip freeze if needed.
+[Liuyi: pip install -r requirements.txt]<br />We also provide a detailed version of dependency from pip freeze if needed.
 
 ```shell
 absl-py==1.4.0
@@ -104,7 +103,7 @@ zipp==3.15.0
 
 ## Quick start for an auction 
 
-To quick start a classic auction,  you can directly use the following command, where each agent by default performs a multi-arm bandit algorithem (epsilon-greedy) 
+To quick start a classic auction,  you can directly use the following command, where each agent by default performs a multi-arm bandit algorithm (epsilon-greedy) <br />[Liuyi: To quick start a classic second price auction]
 ```shell
 # then you can directly take the examples from the scripts 
 # the main file is the auction_bidding_simulate.py 
@@ -118,6 +117,6 @@ python auction_bidding_simulate_multiple.py --mechanism 'second_price' --exp_id 
 ```
 
 
-Then the auction results will saved in the folder "./results/test/33/'' with provided folder name "test" and experiment id "33". As denoted in the hyperparameter, the total round is 1, means the mechanism is fixed using "second price" and the item valuation range is 10.  
+Then the auction results will saved in the folder "./results/test/33/'' with provided folder name "test" and experiment id "33". As denoted in the hyperparameter, the total round is 1, means the mechanism is fixed using "second price" and the item valuation range is 10.  <br />[Liuyi: what's other RL related hyper-parameters? e.g., revenue_averaged_stamp, step_floor?]
 
 We display the final agent bidding policy results as below,  where the truthful bidding (bid/valuation =1) is the theoretical equilibrium result.<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/229273/1684208003453-c1358d2a-f2b5-45e1-8061-d894fa9f8e75.png?x-oss-process=image/format,png#clientId=u6aca483e-306e-4&from=paste&height=480&id=uf4398f10&originHeight=480&originWidth=640&originalType=binary&ratio=1&rotation=0&showTitle=false&size=1229090&status=done&style=none&taskId=ubf766edc-03da-4f02-a86b-05f1cc90144&title=&width=640)<br />Figure 1. The agent bidding policy results after 100k iterations.
