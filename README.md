@@ -47,8 +47,8 @@
 
 ### 7. Quick Start
 
-### 7.1 [Quick Start -Sec.1_ Quick Install & Toy Example](./Quick_Start/Quick%20Start%20-Sec.1_%20Quick%20Install%20%26%20Toy%20Example.md)
+### 7.1 [Quick Start -Sec.1_ Quick Install & Toy Example](./Quick_Start/Quick-Start_1_Quick_Install_and_Toy_Example.md)
 
-### 7.2 [Quick Start -Sec.2_ Join a Classical Auction](./Quick_Start/Quick%20Start%20-Sec.2_%20Join%20a%20Classical%20Auction.md)
+### 7.2 [Quick Start -Sec.2_ Join a Classical Auction](./Quick_Start/Quick-Start_2_Join_a_Classical_Auction.md)
 
-### 7.3 [Quick Start -Sec.3_ Auction with Customed Agent](./Quick_Start/Quick%20Start%20-Sec.3_%20Auction%20with%20Customed%20Agent.md)
+### 7.3 [Quick Start -Sec.3_ Auction with Customed Agent](./Quick_Start/Quick-Start_3_Auction_with_Customed_Agent.md)
