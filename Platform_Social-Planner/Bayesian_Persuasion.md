@@ -6,8 +6,23 @@ Suppose one person, call him Sender, wishes to persuade another, call her Receiv
 3. Sender send a signal![](https://intranetproxy.alipay.com/skylark/lark/__latex/79ce3c7a71877c2ff01695e38ade43ca.svg#card=math&code=s&id=U7kiJ)at the probablity![](https://intranetproxy.alipay.com/skylark/lark/__latex/7979a751618c6c3fd39f7e7c6294e23c.svg#card=math&code=%5Cpi%20%28s%7C%5Comega%29&id=aBlEw)
 4. Reciever recieves the signal and take action![](https://intranetproxy.alipay.com/skylark/lark/__latex/5374c9b03f7b24faa014732efa41a695.svg#card=math&code=a%20%5Cin%20A&id=aeZyo)to maximize her expected utility on the postirior distibution![](https://intranetproxy.alipay.com/skylark/lark/__latex/1fb93f39e7d1a63585bf693e4c3ee704.svg#card=math&code=%5Cmu_s&id=zvWif)
 5. Sender and Reciver gets their realized utility![](https://intranetproxy.alipay.com/skylark/lark/__latex/5fab9e926c64f7ae363b33ff3e5c4b88.svg#card=math&code=v%28a%2C%20%5Comega%29%2C%20u%28a%2C%20%5Comega%29&id=Ultvz)
+### Notation
+| **sign** | **Explanation** |
+| --- | --- |
+| ![](https://intranetproxy.alipay.com/skylark/lark/__latex/5c637e6ab16583afa7dab485049577b4.svg#card=math&code=S%2C%20%5COmega%2C%20A&id=iFYCN) | The set of all signals, true states and actions of Reciever |
+| ![](https://intranetproxy.alipay.com/skylark/lark/__latex/4951b6fc7d096994990b52601e2ab7ab.svg#card=math&code=s%2C%20%5Comega%2C%20a&id=eUAMP) | Realization of state, signal and action |
+| ![](https://intranetproxy.alipay.com/skylark/lark/__latex/892cd18d87c2682d9f658c2e8692dd14.svg#card=math&code=%5Cpi%28s%7C%5Comega%29&id=DQYsp) | Distribution of signals conditioned on states |
+| ![](https://intranetproxy.alipay.com/skylark/lark/__latex/f0ae8a7287d2b14898997324b9905c00.svg#card=math&code=%5Cmu_0&id=T5t5Z) | Prior distribution of states known by both |
+| ![](https://intranetproxy.alipay.com/skylark/lark/__latex/1fb93f39e7d1a63585bf693e4c3ee704.svg#card=math&code=%5Cmu_s&id=xtDuH) | Postirior distribution of Reciever after recieving the signal |
+| ![](https://intranetproxy.alipay.com/skylark/lark/__latex/5fab9e926c64f7ae363b33ff3e5c4b88.svg#card=math&code=v%28a%2C%20%5Comega%29%2C%20u%28a%2C%20%5Comega%29&id=x5SrR) | Utility function of Sender and Reciever depending on action of reciever and true state |
+
+##### Piepeline 
+![截屏2023-05-18 下午4.41.30.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/94556582/1684399319259-0903cad1-d176-44fb-8b1b-fc11a2c72dd4.png#clientId=u34ee9bea-dbe9-4&from=paste&height=207&id=u0cd5a930&originHeight=414&originWidth=778&originalType=binary&ratio=2&rotation=0&showTitle=false&size=182041&status=done&style=none&taskId=ue78b009e-8036-4b4d-b756-399b7b08434&title=&width=389)
+
 ### Implement Detail
-To simulate a Bayesian persuasion process, we run the process for many epochs to force the Recivers learn the distribution of signal![](https://intranetproxy.alipay.com/skylark/lark/__latex/7979a751618c6c3fd39f7e7c6294e23c.svg#card=math&code=%5Cpi%20%28s%7C%5Comega%29&id=dwrPS)instead of commting it. Once the equilibria is acquired, the platform update the signal to reach the optimal disclosure.<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/94556582/1684318124328-5a45708c-31d4-44ec-a1e0-e557690287be.png#clientId=u463af090-24ea-4&from=paste&height=604&id=ufa44912b&originHeight=1207&originWidth=1677&originalType=binary&ratio=2&rotation=0&showTitle=false&size=1574378&status=done&style=none&taskId=u569c91e4-33af-4a0f-a6a5-7dfc713b484&title=&width=838.5)<br />We further demostrate how the four stages are conducted in the AI4SS environment as below.
+To simulate a Bayesian persuasion process, we run the process for many epochs to force the Recivers learn the distribution of signal![](https://intranetproxy.alipay.com/skylark/lark/__latex/7979a751618c6c3fd39f7e7c6294e23c.svg#card=math&code=%5Cpi%20%28s%7C%5Comega%29&id=dwrPS)instead of commting it. Once the equilibria is acquired, the platform update the signal to reach the optimal disclosure.<br />![image.png](https://intranetproxy.alipay.com/skylark/lark/0/2023/png/94556582/1684397480785-d4df6c7c-ccf0-4bf3-b994-a20e3c99d76d.png#clientId=u2ba2442b-8259-4&from=paste&height=366&id=uae807aab&originHeight=732&originWidth=792&originalType=binary&ratio=2&rotation=0&showTitle=false&size=474521&status=done&style=none&taskId=u8aae1aae-73e5-417d-86b3-2e76e47106f&title=&width=396)
+
+We further demostrate how the four stages are conducted in the AI4SS environment as below.
 ```python
     def generate_signal(self, init=True, data_type='int',upper_bound=None):
         if init:
