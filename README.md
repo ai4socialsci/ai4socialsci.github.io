@@ -1,6 +1,6 @@
 # AI for Social Science
 
-## 1. [Summary](./Summary.md)
+## 1. [Summary](./summary.md)
 
 ## 2. Algorithm
 
