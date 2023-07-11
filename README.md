@@ -12,6 +12,8 @@
 
 ### 2.4 [PPO](./algorithm/PPO.md)
 
+### 2.5 [MWU](./algorithm/MWU.md)
+
 ## 3. Agent
 
 ### 3.1 [Signal to Value Function](./agent/agent-signal_to_value_function.md)
